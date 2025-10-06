@@ -1,1 +1,3 @@
-
+product_id,tier,operator,value,currency,rate,payout_frequency,conditions,deposit_condition,withdrawal_condition,early_closure,minimum_balance
+P003,Tier 1,<=,1000,USD,2.5,Monthly,Standard,None,None,Penalty,100
+P003,Tier 2,>,1000,USD,3.0,Monthly,Standard,None,None,Penalty,100
