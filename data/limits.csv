@@ -1,1 +1,3 @@
-
+product_id,channel,limit_type,amount,currency,conditions,tax_status
+P001,Mobile App,Daily Max,10000000,KHR,Verified accounts only,Non-Tax
+P002,Branch,Per Txn Max,10000,USD,ID check required,Tax
