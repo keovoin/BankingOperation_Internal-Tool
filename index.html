@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Governance Tool by DBP Unit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Governance Tool</h1>
+    <div class="filters">
+      <input id="searchInput" type="text" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+        <option>Individual Products</option>
+        <option>Corporate Products</option>
+        <option>TD</option>
+        <option>Extra</option>
+      </select>
+      <select id="segmentFilter">
+        <option value="">All segments</option>
+        <option>Mass</option>
+        <option>SME</option>
+        <option>Corporate</option>
+        <option>VIP</option>
+      </select>
+    </div>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="individual">Individual Products</button>
+      <button class="tab-btn" data-tab="corporate">Corporate Products</button>
+      <button class="tab-btn" data-tab="td">TD</button>
+      <button class="tab-btn" data-tab="extra">Extra</button>
+      <button class="tab-btn" data-tab="admin">Admin</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="individual" class="tab-panel active"></section>
+    <section id="corporate" class="tab-panel"></section>
+    <section id="td" class="tab-panel"></section>
+    <section id="extra" class="tab-panel"></section>
+
+    <section id="admin" class="tab-panel">
+      <div id="adminAuth">
+        <input id="adminPassword" type="password" placeholder="Enter admin password" />
+        <button id="adminLoginBtn">Login</button>
+        <p class="hint">Default password: admin123 (change in script.js)</p>
+      </div>
+
+      <div id="adminPanel" class="hidden">
+        <h2>Bulk upload CSV</h2>
+        <div class="upload-grid">
+          <div>
+            <label>Products CSV</label>
+            <input type="file" id="productsFile" accept=".csv" />
+          </div>
+          <div>
+            <label>Fees CSV</label>
+            <input type="file" id="feesFile" accept=".csv" />
+          </div>
+          <div>
+            <label>Limits CSV</label>
+            <input type="file" id="limitsFile" accept=".csv" />
+          </div>
+          <div>
+            <label>Interest Tiers CSV</label>
+            <input type="file" id="tiersFile" accept=".csv" />
+          </div>
+        </div>
+        <button id="bulkImportBtn">Import</button>
+        <button id="downloadJsonBtn">Download JSON</button>
+        <button id="downloadCsvBtn">Download merged CSV (Products)</button>
+
+        <h2>Edit products</h2>
+        <div id="adminEditList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Static HTML/CSS/JS. Data stays in-browser.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
