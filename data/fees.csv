@@ -1,3 +1,3 @@
 product_id,fee_name,currency,amount,fee,frequency,condition
 P001,Account Maintenance,KHR,0,0,Monthly,No fee
-P002,Transfer Out,USD,5,5,Per Transaction,Above $1,000
+P002,Transfer Out,USD,5,5,Per Transaction,Above $1000
