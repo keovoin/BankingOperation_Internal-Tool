@@ -1,1 +1,4 @@
 product_id,category,product_name,product_type,segment,effective_date
+P001,Individual Products,Smart Savings,Savings,Mass,2025-01-01
+P002,Corporate Products,Biz Current,Current,SME,2025-02-15
+P003,TD,Fixed 12M,Term Deposit,Mass,2025-03-01
